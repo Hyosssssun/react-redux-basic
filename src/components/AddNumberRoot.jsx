@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import AddNumber from './AddNumber'
 
-export default class AddNumberRoot extends Component{
-    render(){
-      return (
+export default function AddNumberRoot(){
+    return (
         <div>
-          <h1>Add Number Root</h1>
-          <AddNumber />
+            <h1>Add Number Root</h1>
+            <AddNumber />
         </div>
-      )
-    }
-  }
+    )
+}

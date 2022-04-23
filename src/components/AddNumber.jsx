@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { plus, minus, plusAmount } from '../redux/counter';
 
-export default class AddNumber extends Component {
-    render() {
-      return (
-        <div>
-          <h1>Add Number</h1>
-          <input type="button" value="+"></input>
-          <input type="text" value="0"></input>
+export default function AddNumber() {
+    const dispatch = useDispatch();
+    return (
+        <div >
+            <h1>Add Number</h1>
+            <button onClick={()=> dispatch(plus())}> + </button>
+            <button onClick={()=> dispatch(minus())}> - </button>
+            <button onClick={()=> dispatch(plusAmount(100))}> + 100 </button>
         </div>
-      )
-    }
-  }
+    )
+}

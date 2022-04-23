@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux'
 
-export default class DisplayNumber extends Component {
-    render() {
-      return (
+export default function DisplayNumber() {
+    const { count } = useSelector((state)=>state.counter)
+    return (
         <div>
-          <h1>Display Number</h1>
-          <input type="text" value="0" readOnly></input>
+            <h1>Display Number</h1>
+            <h2>{count}</h2>
         </div>
-      )
-    }
-  }
-  
-  
+    )
+}
