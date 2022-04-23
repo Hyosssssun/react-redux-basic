@@ -10,3 +10,18 @@ export default function DisplayNumber() {
         </div>
     )
 }
+
+/* PURE REACT */
+
+/*
+    import React from 'react'
+
+    export default function DisplayNumber({ numberToDisplay }) {
+        return (
+            <div>
+                <h1>Display Number</h1>
+                <h2>{numberToDisplay}</h2>
+            </div>
+        )
+    }
+*/

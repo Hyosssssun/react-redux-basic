@@ -13,3 +13,21 @@ export default function AddNumber() {
         </div>
     )
 }
+
+
+/* PURE REACT */
+
+/*
+    import React from 'react'
+
+    export default function AddNumber({ plusOne, minusOne, plus100 }) {
+        return (
+            <div >
+                <h1>Add Number</h1>
+                <button onClick={plusOne}> + </button>
+                <button onClick={minusOne}> - </button>
+                <button onClick={plus100}> + 100 </button>
+            </div>
+        )
+    }
+*/
